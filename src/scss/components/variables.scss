@@ -1,0 +1,139 @@
+// ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+// ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+// variables
+
+:root {
+
+  //        Light                    300    
+  //        Regular (Normal)         400    
+  //        Medium                   500    
+  //        Semi-bold                600    
+  //        Bold                     700    
+  //        Extra-bold               800    
+  //        Black                    900    
+
+  // font
+  --font-1: 400 14px / calc(14 / 14 * 100%) "Inter";
+  --font-2: 500 14px / calc(14 / 14 * 100%) "Inter";
+  --font-3: 600 20px / calc(20 / 20 * 100%) "Inter";
+  --font-4: 500 2.6rem / calc(26 / 26 * 100%) "Inter";
+  --font-5: 400 14px / calc(14 / 14 * 100%) "Poppins";
+  --font-6: 400 16px / calc(16 / 16 * 100%) "Poppins";
+  --font-7: 500 18px / calc(18 / 18 * 100%) "Inter";
+  --font-8: 400 16px / calc(26 / 16 * 100%) "Inter";
+  --font-9: 600 24px / calc(24 / 24 * 100%) "Inter";
+  --font-10: 400 12px / calc(12 / 12 * 100%) "Inter";
+
+  --font-11: 600 4.6rem / calc(46 / 46 * 100%) "Inter";
+  --font-12: 400 21px / calc(29 / 21 * 100%) "Inter";
+  --font-13: 700 20px / calc(20 / 20 * 100%) "Sen";
+  --font-14: 600 5.6rem / calc(66 / 56 * 100%) "Inter";
+
+  @media (max-width: 1200px) {
+    --font-3: 600 16px / calc(16 / 16 * 100%) "Inter";
+    --font-8: 400 14px / calc(24 / 14 * 100%) "Inter";
+    --font-12: 400 16px / calc(21 / 16 * 100%) "Inter";
+  }
+  
+  // font: 600 40px / calc(40 / 40 * 100%) "Inter";
+  // font: 400 18px / calc(30 / 18 * 100%) "Inter";
+  // font: 600 28px / calc(30 / 28 * 100%) "Poppins";
+  // font: 400 12px / calc(12 / 12 * 100%) "Poppins";
+  // font: 600 30px / calc(30 / 30 * 100%) "Poppins";
+  // font: 400 19px / calc(30 / 19 * 100%) "Inter";
+  // font: 600 20px / calc(22 / 20 * 100%) "Inter";
+  // font: 400 18px / calc(28 / 18 * 100%) "Inter";
+  // font: 700 84px / calc(86 / 84 * 100%) "Sen";
+  // font: 500 16px / calc(16 / 16 * 100%) "Poppins";
+
+  // transition
+  --transition-1: 0.3s;
+  --transition-2: 0.5s;
+
+  // background
+  --background-1: center/cover no-repeat;
+  --background-2: center/cover fixed;
+  --background-3: right 5px top 50%/2rem no-repeat;
+
+  --spoilerMedia: 992px;
+
+  // color
+  --color-1: #2D3134;
+  --color-2: #FFFFFF;
+  --color-3: #F66F4D;
+  --color-4: #5B5F62;
+  --color-5: #FAF8ED;
+  --color-6: #FFC14B;
+  --color-7: #2E476B;
+  --color-8: #676A6C;
+  --color-9: #3D3D3D;
+  --color-10: #939597;
+
+  --twitter: #1da1f2;
+  --facebook: #3b5998;
+  --instagram: #833ab4;
+
+  // clip path
+  --triangle: polygon(0 0, 50% 100%, 100% 0);
+  --cross-5: polygon(0 45%, 45% 45%, 45% 0, 55% 0, 55% 45%, 100% 45%, 100% 55%, 55% 55%, 55% 100%, 45% 100%, 45% 55%, 0 55%);
+
+  // cross
+  --cross: linear-gradient(45deg, var(--cross-color-2) 45%, var(--cross-color-1) 46%, var(--cross-color-1) 55%, var(--cross-color-2) 56%),
+          linear-gradient(-45deg, var(--cross-color-2) 45%, var(--cross-color-1) 46%, var(--cross-color-1) 55%, var(--cross-color-2) 56%);
+  --cross-color-1: var(--color-3);
+  --cross-color-2: transparent;
+
+   // plus
+  --plus: linear-gradient(0deg, var(--plus-color-2) 45%, var(--plus-color-1) 46%, 
+                                  var(--plus-color-1) 55%, var(--plus-color-2) 56%),
+          linear-gradient(90deg, var(--plus-color-2) 45%, var(--plus-color-1) 46%,
+                                  var(--plus-color-1) 55%, var(--plus-color-2) 56%);
+  --plus-color-1: gold;
+  --plus-color-2: transparent;
+
+  // minus
+  --minus: linear-gradient(0deg, var(--minus-color-2) 45%, var(--minus-color-1) 46%, var(--minus-color-1) 55%, var(--minus-color-2) 56%);
+  --minus-color-1: gold;
+  --minus-color-2: transparent;
+
+
+   // categories
+   --categoriesSlidesPerView: 6;
+  //  @media (max-width: 1200px) {
+  //    --sliderSlidesPerView: 5;
+  //  }
+  //  @media (max-width: 992px) {
+  //   --sliderSlidesPerView: 5;
+  // }
+   @media (max-width: 768px) {
+    --categoriesSlidesPerView: 4;
+  }
+  @media (max-width: 480px) {
+   --categoriesSlidesPerView: 3;
+ }
+
+ --sliderSpaceBetween: 30;
+ @media (max-width: 480px) {
+  --sliderSpaceBetween: 10;
+ }
+
+ // ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+ // ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+ 
+ // find
+
+ --findSlidesPerView: 3;
+ @media (max-width: 992px) {
+  --findSlidesPerView: 2;
+}
+  @media (max-width: 768px) {
+    --findSlidesPerView: 1;
+ }
+//  @media (max-width: 320px) {
+//   --findSlidesPerView: 1;
+// }
+
+}
+
+// :root.dark-theme {}
